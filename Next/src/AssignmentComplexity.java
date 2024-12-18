@@ -1,10 +1,12 @@
 public class AssignmentComplexity {
-    int estimatedTime;
-    int timeRemaining;
-    int priority;
+    private Assignment assignment;
+    private int complexity;
 
-    public AssignmentComplexity(int totalTime,int assignmentPriority) {
-        estimatedTime = totalTime;
-        priority = assignmentPriority;
+    public AssignmentComplexity(Assignment assignment) {
+        this.assignment = assignment;
+    }
+
+    public int calculateComplexity() {
+        return (assignment.getPriority() * 2) + assignment.getEstimatedTime() + (5 / assignment.getDaysUntilDue());
     }
 }

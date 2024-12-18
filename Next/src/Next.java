@@ -6,7 +6,7 @@ public class Next {
     PriorityQueue<Assignment> assignments = new PriorityQueue<>();
 
     public static void main(String[] args) throws Exception {
-        bool running = False;
+        boolean running = false;
         String instructions = 
         """
         Enter: 
